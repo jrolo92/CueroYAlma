@@ -1,5 +1,5 @@
 footer {
-    font-family: $tipografia;
+  font-family: $tipografia;
   background-color: $color-auxiliar;
   color: $color-principal;
   padding: 40px 20px;
@@ -7,8 +7,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  
 
   .footer-top {
+    border-top: 1px solid $color-secundario;
     display: flex;
     justify-content: center; // centra las columnas dentro del footer
     gap: 60px; // separación entre columnas
@@ -18,7 +20,7 @@ footer {
       flex: 1;
 
       h4 {
-        font-size: 1.2rem;
+        font-size: $parrafo;
         margin-bottom: 10px;
         font-weight: bold;
       }
@@ -26,8 +28,8 @@ footer {
       p,
       li,
       a {
-        color: #000;
-        font-size: 0.95rem;
+        color: $color-principal;
+        font-size: $parrafo;
       }
 
       ul {
@@ -52,15 +54,8 @@ footer {
 
   .footer-bot {
     text-align: center;
-    font-size: 0.9rem;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
+    font-size: $parrafo;
   }
 
-  @media (max-width: 768px) {
-    .footer-top {
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
+
 }

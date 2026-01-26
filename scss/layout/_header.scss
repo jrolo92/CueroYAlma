@@ -3,6 +3,7 @@ header {
   background-color: $color-principal;
   color: $color-auxiliar;
   padding: 10px 20px;
+  height: 90px;
 
   display: flex;
   justify-content: space-between; // nav a la izquierda, marca a la derecha
@@ -14,13 +15,15 @@ header {
     gap: 10px;
 
     h1 {
-      font-size: 1.8rem;
-      margin: 0;
-      color: #fff;
+      font-size: $H1;
+      color: $color-auxiliar;
     }
 
     img {
       display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 20%;
     }
   }
 
@@ -28,13 +31,12 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 
     li a {
-      color: #fff;
+      color: $color-auxiliar;
       text-decoration: none;
-      font-weight: 500;
+      font-size: $H3;
+      font-weight: 500 px;
 
       &:hover {
         text-decoration: underline;

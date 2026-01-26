@@ -1,0 +1,121 @@
+.carrito {
+
+    main {
+        // Contenedor principal centrado
+        max-width: 70%;
+        min-width: 30%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: $color-fondo;
+        border: 1px solid $color-secundario;
+        border-radius: 8px;
+        font-family: $tipografia;
+
+        // Barra de scroll vertical
+        
+
+        h2 {
+            font-size: $H1;
+            color: $color-principal;
+            text-decoration: underline;
+            margin: {
+                left: 20px;
+                bottom: 10px;
+            }
+            
+        }
+
+        // Enlace Seguir comprando
+        div > a {
+            color: $color-boton;
+            text-decoration: none;
+            font-size: $H3;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        // Tarjeta de producto
+        article {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+
+            // Imagen
+            div:first-child {
+
+                img {
+                    width: 50%;
+                    height: 50%;
+                    border-radius: 5px;
+                    border: 1px solid $color-principal;
+                }
+            }
+
+            // Info y Formulario
+            div:nth-child(2) {
+                width: 100%;
+
+                .nombre-producto {
+                    font-size: $H3;
+                    color: $color-principal;
+                }
+
+                p {
+                    // Precio
+                    font-size: $H2;
+                    font-weight: bold;
+                    color: $color-boton;
+                }
+
+                form {
+                    display: flex;
+                    gap: 20px;
+                    font-size: $H3;
+
+                    input {
+                        border: 1px solid $color-secundario;
+                        border-radius: 8px;
+                        padding: 5px;
+                    }
+
+                    button {
+                        background-color: $color-boton;
+                        color: $color-auxiliar;
+                        border: none;
+                        padding: 6px 12px;
+                        border-radius: 8px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $color-principal;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pago{
+            width: 20%;
+            background-color: $color-boton;
+            color: $color-auxiliar;
+            border:none;
+            margin-left:auto;
+            padding: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-principal;
+            }
+        }
+    }
+
+}
