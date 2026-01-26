@@ -1,0 +1,36 @@
+.index {
+
+    main {
+        background-color: $color-fondo;
+        font-family: $tipografia;
+
+        #imgPrincipal {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .caja-texto {
+            font-size: $H1;
+            padding: 2rem; 
+            text-align: center;
+        }
+
+        #carrusel {
+            div {
+                display: flex;
+                flex-wrap: wrap; // Permite que las imágenes bajen si no caben
+                justify-content: center;
+                gap: 15px; // Espacio entre imágenes
+            }
+
+            img {
+                max-width: 100%; // No se salen del contenedor
+                height: auto;
+            }
+        }
+    }
+
+
+
+}

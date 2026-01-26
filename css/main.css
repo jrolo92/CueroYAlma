@@ -174,3 +174,28 @@ footer .footer-bot {
 .carrito main .pago:hover {
   background-color: #000000;
 }
+
+.index main {
+  background-color: #E0E1DD;
+  font-family: "Montserrat";
+}
+.index main #imgPrincipal {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.index main .caja-texto {
+  font-size: 36px;
+  padding: 2rem;
+  text-align: center;
+}
+.index main #carrusel div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.index main #carrusel img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
