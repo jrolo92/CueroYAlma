@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - CUERO & ALMA</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- Cabecera principal y Barra de navegación -->
     <header>
@@ -34,7 +37,7 @@
         <!-- Lista de productos en el carrito -->
         <section>
             <h2>Tu Carrito de Compras</h2>
-            
+
             <!-- Producto 1 -->
             <article>
                 <div>
@@ -45,6 +48,21 @@
                     <form>
                         <label for="cantidad1">Cantidad:</label>
                         <input type="number" id="cantidad1" name="cantidad1" value="1" min="1">
+                        <button type="button">Eliminar</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article>
+                <div>
+                    <img src="images/2.png" alt="Bolso Bandolera" width="100" height="100">
+                </div>
+                <div>
+                    <p>Precio: 59.99€</p>
+                    <form>
+                        <label for="cantidad2">Cantidad:</label>
+                        <input type="number" id="cantidad2" name="cantidad2" value="1" min="1">
                         <button type="button">Eliminar</button>
                     </form>
                 </div>
@@ -91,5 +109,7 @@
             <p>&copy; 2025 CUERO & ALMA. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 </body>
+
 </html>
