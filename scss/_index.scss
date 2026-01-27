@@ -12,25 +12,48 @@
 
         .caja-texto {
             font-size: $H1;
-            padding: 2rem; 
+            padding: 2rem;
             text-align: center;
         }
 
         #carrusel {
-            div {
+            overflow: hidden;
+            width: 100%;
+            .track-carrusel {
                 display: flex;
-                flex-wrap: wrap; // Permite que las imágenes bajen si no caben
-                justify-content: center;
-                gap: 15px; // Espacio entre imágenes
+                width: calc($anchoImagen * cantidadImagenes);
+                animation: desplazar 20s linear infinite;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
             }
 
             img {
-                max-width: 100%; // No se salen del contenedor
+                width: $anchoImagen;
                 height: auto;
+                flex-shrink: 0; // Evita que las imágenes se aplasten
+                margin: $margen;
+            }
+
+            
+        }
+
+        @keyframes desplazar {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-1 * (#{$espacioTotalImagen} * #{$cantidadImagenes})));
             }
         }
+
+        
     }
+    
 
 
 
 }
+
