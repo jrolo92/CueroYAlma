@@ -1,3 +1,62 @@
+.btn-eliminar {
+  background-color: #414833;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+.btn-eliminar:hover {
+  background-color: #000000;
+}
+
+.btnPago {
+  max-width: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: end;
+}
+.btnPago button {
+  width: 100px;
+  background-color: #414833;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+.btnPago button:hover {
+  background-color: #000000;
+}
+@media (max-width: 768px) {
+  .btnPago button {
+    width: 100%;
+  }
+}
+
+.form-carrito {
+  display: flex;
+  font-size: 24px;
+  font-family: "Montserrat";
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .form-carrito {
+    flex-direction: column;
+  }
+}
+.form-carrito label {
+  color: #000000;
+}
+.form-carrito input {
+  border: 1px solid #C2C5AA;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: "Montserrat";
+}
+
 header {
   font-family: "Montserrat";
   background-color: #000000;
@@ -87,15 +146,32 @@ footer .footer-bot {
   font-size: 16px;
 }
 
+.carrito .enlaceCata {
+  max-width: 73%;
+  margin: 20px auto 0;
+}
+.carrito .enlaceCata a {
+  display: inline-block;
+  color: #414833;
+  text-decoration: none;
+  font-size: 24px;
+  padding-top: 10px;
+}
+.carrito .enlaceCata a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
 .carrito main {
   max-width: 70%;
-  min-width: 30%;
+  min-width: 300px;
   margin: 40px auto;
   padding: 20px;
   background-color: #E0E1DD;
   border: 1px solid #C2C5AA;
   border-radius: 8px;
   font-family: "Montserrat";
+  height: 800px;
+  overflow-y: auto;
 }
 .carrito main h2 {
   font-size: 36px;
@@ -103,14 +179,6 @@ footer .footer-bot {
   text-decoration: underline;
   margin-left: 20px;
   margin-bottom: 10px;
-}
-.carrito main div > a {
-  color: #414833;
-  text-decoration: none;
-  font-size: 24px;
-}
-.carrito main div > a:hover {
-  text-decoration: underline;
 }
 .carrito main section {
   display: flex;
@@ -121,6 +189,12 @@ footer .footer-bot {
   align-items: center;
   padding: 20px;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .carrito main article {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .carrito main article div:first-child img {
   width: 50%;
@@ -139,40 +213,6 @@ footer .footer-bot {
   font-size: 30px;
   font-weight: bold;
   color: #414833;
-}
-.carrito main article div:nth-child(2) form {
-  display: flex;
-  gap: 20px;
-  font-size: 24px;
-}
-.carrito main article div:nth-child(2) form input {
-  border: 1px solid #C2C5AA;
-  border-radius: 8px;
-  padding: 5px;
-}
-.carrito main article div:nth-child(2) form button {
-  background-color: #414833;
-  color: #FFFFFF;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.carrito main article div:nth-child(2) form button:hover {
-  background-color: #000000;
-}
-.carrito main .pago {
-  width: 20%;
-  background-color: #414833;
-  color: #FFFFFF;
-  border: none;
-  margin-left: auto;
-  padding: 6px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.carrito main .pago:hover {
-  background-color: #000000;
 }
 
 .index main {

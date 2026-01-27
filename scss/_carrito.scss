@@ -1,9 +1,27 @@
 .carrito {
+    // Enlace seguir comprando
+    .enlaceCata {
+        max-width: 73%;
+        margin: 20px auto 0; 
+        
+        a { 
+            display: inline-block;
+            color: $color-boton;
+            text-decoration: none;
+            font-size: $H3;
+            padding-top: 10px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-principal;
+            }
+        }
+    }
 
     main {
         // Contenedor principal centrado
         max-width: 70%;
-        min-width: 30%;
+        min-width: 300px;
         margin: 40px auto;
         padding: 20px;
         background-color: $color-fondo;
@@ -12,7 +30,8 @@
         font-family: $tipografia;
 
         // Barra de scroll vertical
-        
+        height: 800px;
+        overflow-y:auto;
 
         h2 {
             font-size: $H1;
@@ -23,17 +42,6 @@
                 bottom: 10px;
             }
             
-        }
-
-        // Enlace Seguir comprando
-        div > a {
-            color: $color-boton;
-            text-decoration: none;
-            font-size: $H3;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         section {
@@ -47,6 +55,11 @@
             align-items: center;
             padding: 20px;
             border-radius: 10px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                text-align: center;     
+            }
 
             // Imagen
             div:first-child {
@@ -74,48 +87,7 @@
                     font-weight: bold;
                     color: $color-boton;
                 }
-
-                form {
-                    display: flex;
-                    gap: 20px;
-                    font-size: $H3;
-
-                    input {
-                        border: 1px solid $color-secundario;
-                        border-radius: 8px;
-                        padding: 5px;
-                    }
-
-                    button {
-                        background-color: $color-boton;
-                        color: $color-auxiliar;
-                        border: none;
-                        padding: 6px 12px;
-                        border-radius: 8px;
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: $color-principal;
-                        }
-                    }
-                }
-            }
-        }
-
-        .pago{
-            width: 20%;
-            background-color: $color-boton;
-            color: $color-auxiliar;
-            border:none;
-            margin-left:auto;
-            padding: 6px 12px;
-            border-radius: 8px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $color-principal;
             }
         }
     }
-
 }
