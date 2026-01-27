@@ -36,6 +36,45 @@
   }
 }
 
+.card-producto {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .card-producto {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.card-producto .card-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+@media (max-width: 768px) {
+  .card-producto .card-image img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+.card-producto .card-info {
+  width: 100%;
+}
+.card-producto .card-info .nombre-producto {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card-producto .card-info p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #414833;
+}
+
 .form-carrito {
   display: flex;
   font-size: 24px;
@@ -148,7 +187,7 @@ footer .footer-bot {
 
 .carrito .enlaceCata {
   max-width: 73%;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 .carrito .enlaceCata a {
   display: inline-block;
@@ -254,4 +293,56 @@ footer .footer-bot {
   100% {
     transform: translateX(calc(-1 * 400px * 6));
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.catalogo section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.catalogo section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #E0E1DD;
+  border-radius: 8px;
+}
+.catalogo section div img {
+  flex: 0 0 300px;
+  width: 300px;
+  height: auto;
+  border: 3px solid #000000;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.catalogo section div p {
+  flex: 1;
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 30px;
+  line-height: 1.6;
+  color: #000000;
+}
+.catalogo section div form {
+  flex: 0 0 auto;
+}
+.catalogo section div form button {
+  background-color: #414833;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.catalogo section div form button:hover {
+  background-color: rgb(38.0487804878, 42.1463414634, 29.8536585366);
+}
