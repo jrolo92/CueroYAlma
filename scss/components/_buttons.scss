@@ -9,7 +9,7 @@
     font-family: $tipografia; 
     
     &:hover { 
-        background-color: $color-principal; 
+        background-color: darken($color-boton, 8%); 
     } 
 } 
 
