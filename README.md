@@ -45,3 +45,7 @@ El uso de Sass ha dotado al proyecto de herramientas de desarrollo profesional:
 - Reutilización de Código: Al separar los botones y componentes, evitamos duplicar reglas CSS, lo que resulta en un archivo final más ligero y optimizado.
 
 - Flujo de Trabajo Eficiente: El uso de archivos parciales (_) permite una navegación rápida por el proyecto y una mejor organización mental de la interfaz.
+
+
+## 5. Mejoras
+- En el carrusel poner título de sección de tendencias.

@@ -1,46 +1,35 @@
-// Boton Base
-.btn-base {
-    background-color: $color-boton;
-    color: $color-auxiliar;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: $tipografia;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-flex; // Flexbox interno para alinear posibles iconos
-    align-items: center;
-    justify-content: center;
+//Mixin para estilos base de botón
+ @mixin boton-base($padding) { 
+    background-color: $color-boton; 
+    color: $color-auxiliar; 
+    border: none; 
+    padding: $padding; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-family: $tipografia; 
+    
+    &:hover { 
+        background-color: darken($color-boton, 8%); 
+    } 
+} 
 
-    &:hover {
-        background-color: $color-principal;
-    }
+// Estilo para el botón de "Eliminar"  
+.btn-eliminar { 
+    @include boton-base(6px 12px); 
+} 
 
-}
-
-// Estilo para el botón de "Eliminar"
-.btn-eliminar {
-    @extend .btn-base;
-    padding: 6px 12px;
-    font-size: 0.9rem;
-
-}
-
-// Estilo para el botón de Pagar
-.btnPago {
-
-    display: flex;
-    justify-content: end;
-    margin: 20px auto;
-    padding: 0 30px;
-    max-width: 70%;
-
-    button {
-        @extend .btn-base;
+// Estilo para el botón de Pagar  
+.btnPago { 
+    max-width: 70%; 
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: end; 
+    button { 
         width: 100px; 
-        padding: 10px 12px;
-
-        @media (max-width: 768px) {
+        @include boton-base(10px 12px); 
+        
+        @media (max-width: 768px) { 
             width: 100%; 
-        }
-    }
+        } 
+    } 
 }
