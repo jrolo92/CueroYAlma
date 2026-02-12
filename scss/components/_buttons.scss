@@ -1,13 +1,15 @@
-
-// Estilo para el botón de "Eliminar"
-.btn-eliminar {
+// Boton Base
+.btn-base {
     background-color: $color-boton;
     color: $color-auxiliar;
     border: none;
-    padding: 6px 12px;
     border-radius: 8px;
     cursor: pointer;
     font-family: $tipografia;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex; // Flexbox interno para alinear posibles iconos
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         background-color: $color-principal;
@@ -15,26 +17,27 @@
 
 }
 
+// Estilo para el botón de "Eliminar"
+.btn-eliminar {
+    @extend .btn-base;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+
+}
+
 // Estilo para el botón de Pagar
 .btnPago {
-    max-width: 70%; 
-    margin: 20px auto; 
+
     display: flex;
-    justify-content: end; 
+    justify-content: end;
+    margin: 20px auto;
+    padding: 0 30px;
+    max-width: 70%;
 
     button {
-        width: 100px;
-        background-color: $color-boton;
-        color: $color-auxiliar;
-        border: none;
+        @extend .btn-base;
+        width: 100px; 
         padding: 10px 12px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-family: $tipografia;
-
-        &:hover {
-            background-color: $color-principal;
-        }
 
         @media (max-width: 768px) {
             width: 100%; 

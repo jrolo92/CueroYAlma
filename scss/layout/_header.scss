@@ -2,17 +2,18 @@ header {
   font-family: $tipografia;
   background-color: $color-principal;
   color: $color-auxiliar;
-  padding: 10px 20px;
-  height: 90px;
+  padding: 10px 40px;
+  height: 100px;
 
-  display: flex;
-  justify-content: space-between; // nav a la izquierda, marca a la derecha
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
+  gap: 40px;
 
   .marca {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 
     h1 {
       font-size: $H1;
@@ -27,20 +28,41 @@ header {
     }
   }
 
-  nav ul {
-    list-style: none;
+  nav {
     display: flex;
+    justify-content: end;
+    
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+
+      li a {
+        color: $color-auxiliar;
+        text-decoration: none;
+        font-size: $H3;
+        font-weight: 500 px;
+
+        &:hover {
+          color: lighten($color-secundario, 10%);
+        }
+      }
+    }
+  }
+}
+
+
+// Media query para pantallas pequeñas
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 20px;
+    justify-items: center; 
     gap: 20px;
 
-    li a {
-      color: $color-auxiliar;
-      text-decoration: none;
-      font-size: $H3;
-      font-weight: 500 px;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    nav {
+        justify-content: center;
     }
   }
 }
