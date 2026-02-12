@@ -32,8 +32,7 @@ Este proyecto implementa una plataforma de e-commerce de marroquinería utilizan
 ```
 
 ## 3. Qué se ha refactorizado respecto al CSS original
-Hemos generado este proyecto directamente usando SASS, lo cual nos ha permitido el uso de variables y de código dividido en módulos que se usa en distintas partes del proyecto
-gracias a los partials, los cuales se compilan en conjunto en un archivo css principal.
+Hemos generado este proyecto directamente usando SASS, lo cual nos ha permitido el uso de variables y de código dividido en módulos que se usa en distintas partes del proyecto gracias a los partials, los cuales se compilan en conjunto en un archivo css principal. Se ha refactorizado todos los estilos para adaptarlos al uso de flex y grid.
 
 
 ## 4. Qué ventajas aporta SASS al proyecto
