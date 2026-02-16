@@ -8,9 +8,9 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    // Estos son tus DIVS que contienen cada producto
     div {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       gap: 3rem;
@@ -19,25 +19,30 @@
       border-radius: 8px;
 
       img {
-        flex: 0 0 300px;
+        flex: 0 1 300px;
         width: 300px;
+        min-width: 200px;
         height: auto;
         border: 3px solid $color-principal;
         border-radius: 4px;
         object-fit: cover;
+        align-self: flex-start;
       }
 
       p {
-        flex: 1;
+        flex: 2 1 auto;
+        min-width: 200px;
         text-align: left;
         font-family: $tipografia;
         font-size: $H2; 
         line-height: 1.6;
         color: $color-principal;
+        align-self: center;
       }
 
       form {
         flex: 0 0 auto;
+        align-self: center;
 
         button {
           background-color: $color-boton;
