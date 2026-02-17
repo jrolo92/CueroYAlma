@@ -21,9 +21,11 @@
 // Estilo para el botón de Pagar  
 .btnPago { 
     max-width: 70%; 
-    margin: 20px auto; 
+    margin: 20px auto 10px; 
     display: flex; 
-    justify-content: end; 
+    justify-content: flex-end;
+    
+    
     button { 
         width: 100px; 
         @include boton-base(10px 12px); 

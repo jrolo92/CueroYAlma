@@ -2,16 +2,16 @@ footer {
   font-family: $tipografia;
   background-color: $color-auxiliar;
   color: $color-principal;
-  padding: 15px 0 20px;
+  padding: 10px 0;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   
 
   .footer-top {
     border-top: 1px solid $color-secundario;
-    padding-top: 20px;
+    padding-top: 10px;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));

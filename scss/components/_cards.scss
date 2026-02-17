@@ -3,7 +3,7 @@
     article {
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
 
         @media (max-width: 768px) {
@@ -33,9 +33,13 @@
 
             p {
                 // Precio
-                font-size: $H2;
+                font-size: $parrafo;
                 font-weight: bold;
                 color: $color-boton;
+            }
+
+            .form-carrito {
+                font-size: $parrafo;
             }
         }
     }

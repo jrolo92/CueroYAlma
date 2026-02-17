@@ -3,7 +3,7 @@
     // Enlace seguir comprando
     .enlaceCata {
         max-width: 73%;
-        margin: 20px auto;
+        margin: 10px auto;
         display:flex;
         
         a { 
@@ -25,7 +25,7 @@
 
         max-width: 70%;
         min-width: 300px;
-        margin: 40px auto;
+        margin: 1px auto;
         padding: 20px;
         background-color: $color-fondo;
         border: 1px solid $color-secundario;
@@ -33,11 +33,12 @@
         font-family: $tipografia;
 
         // Barra de scroll vertical
-        height: 700px;
+        height: 500px;
         overflow-y:auto;
 
         h2 {
-            font-size: $H1;
+            margin-top: 0;
+            font-size: $H2;
             color: $color-principal;
             text-decoration: underline;
             margin-bottom: 10px;
@@ -47,7 +48,7 @@
         section {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 2px;
         }
     
     }
