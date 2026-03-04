@@ -1,4 +1,7 @@
 .carrito {
+
+    // Usamos el mixin que creamos
+    @include transicion (0.8s);
     
     // Enlace seguir comprando
     .enlaceCata {

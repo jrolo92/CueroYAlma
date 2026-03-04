@@ -1,3 +1,8 @@
+body{
+    // Usamos el mixin que creamos
+    @include transicion (0.8s);
+}
+
 .index {
 
 
