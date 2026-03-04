@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUERO & ALMA</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .promo-lateral {
+            position: fixed;
+            left: 10px;
+            top: 120px;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            background: #fff;
+            padding: .5rem;
+            border-radius: 8px;
+        }
+
+        .promo-lateral h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .promo-lateral iframe {
+            border: 0;
+            width: 160px;
+            height: 600px;
+        }
+
+        @media (max-width: 1200px) {
+            .promo-lateral {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="index">
@@ -26,6 +58,11 @@
             </ul>
         </nav>
     </header>
+
+    <aside class="promo-lateral" aria-label="Anuncio promocional">
+        <h2>Promo</h2>
+        <iframe src="promo/promo.html" title="Promo Cuero y Alma" loading="lazy"></iframe>
+    </aside>
 
     <main>
         <!-- Imagen principal destacada -->
