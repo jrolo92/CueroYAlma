@@ -1,6 +1,6 @@
 # Proyecto: CUERO & ALMA
 
-Este proyecto implementa una plataforma de e-commerce de marroquinería utilizando una arquitectura de estilos moderna, modular y escalable basada en **SASS**.ilklooooo
+Este proyecto implementa una plataforma de e-commerce de marroquinería utilizando una arquitectura de estilos moderna, modular y escalable basada en **SASS**.
 
 ## 1. Integrantes del Grupo
 * **Jaime Gómez Mesa**
